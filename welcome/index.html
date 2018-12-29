@@ -16,14 +16,16 @@
         <h1>Tell me your name</h1>
 
         <form action="">
-            <input id="inputname" type="text" placeholder="Your Name">
+            <input autocapitalize="off" autocomplete="off" spellcheck="false" autocorrect="off" id="inputname" type="text" placeholder="Your Name" autofocus>
         </form>
-        <button onclick="outputname()">Next</button>
+        <button id="next" onclick="outputname()">Next</button>
     </div>
 
     <div id="container2">
         <h1 id="demo"></h1>
     </div>
+    <!-- <button id="back" value="Refresh Page" onClick="window.location.reload()">Back</button> -->
+    <button id="back" onClick="takeMeBack()">Back</button>
 </body>
 
 </html>

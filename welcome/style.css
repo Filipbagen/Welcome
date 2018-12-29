@@ -25,7 +25,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 5%;
+    pointer-events:none;
 }
 
 p {
@@ -38,7 +38,19 @@ h1 {
     font-weight: 300;
 }
 
-button {
+#next, #back {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid dodgerblue;
+  border-radius: 4px;
+  width: 10%;
+  transition: .3s;
+  box-shadow: 0 0 0 0;
+  min-width: 80px;
+}
+
+#next {
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -52,13 +64,30 @@ button {
   min-width: 80px;
 }
 
-button:hover {
+#back {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #fff;
+    color: dodgerblue;
+}
+
+#back:hover {
+    background-color: dodgerblue;
+    transition: .3s;
+    box-shadow: 0 0 8px 0 dodgerblue;
+    color: #fff;
+}
+
+#next:hover {
     background-color: dodgerblue;
     transition: .3s;
     box-shadow: 0 0 8px 0 dodgerblue;
 }
 
-button, input {
+#next, input {
     padding: 8px;
     margin: 20px auto;
     display:block;
