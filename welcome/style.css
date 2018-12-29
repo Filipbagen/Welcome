@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     height: 100vh;
     color: white;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -10,9 +11,11 @@ body {
 }
 
 .container {
-    height: 10vh;
-    border: 3px solid green;
-    padding: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
 }
 
 p {
@@ -22,7 +25,7 @@ p {
 }
 
 button {
-  padding: 15px 25px;
+  padding: 35px 25px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -33,6 +36,7 @@ button {
   width: 10%;
   transition: .3s;
   box-shadow: 0 0 0 0;
+  min-width: 80px;
 }
 
 button:hover {
