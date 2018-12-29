@@ -8,15 +8,21 @@
     <title>Welcome</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <script lang="javascript" type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
     <div class="container" id="container1">
-        <p>Write your name</p>
-        <input id="myName" type="text" placeholder="Your Name">
+        <h1>Tell me your name</h1>
+
+        <form action="">
+            <input id="inputname" type="text" placeholder="Your Name">
+        </form>
         <button onclick="outputname()">Next</button>
-        </input>
+    </div>
+
+    <div id="container2">
+        <h1 id="demo"></h1>
     </div>
 </body>
 

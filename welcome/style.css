@@ -8,9 +8,19 @@ body {
 	-moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
     overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
-.container {
+#container1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+}
+
+#container2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,13 +29,16 @@ body {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
   font-size: 18px;
+  font-weight: 300;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 300;
 }
 
 button {
-  padding: 35px 25px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -47,7 +60,7 @@ button:hover {
 
 button, input {
     padding: 8px;
-    margin: 10px auto;
+    margin: 20px auto;
     display:block;
 }
 
@@ -60,7 +73,7 @@ input[type=text] {
 
 input[type=text]:focus {
     border-color: dodgerblue;
-    box-shadow: 0 0 8px 0 dodgerblue;
+    box-shadow: 0 0 8px 0 rgba(30, 144, 255, 1);
 }
 
 
