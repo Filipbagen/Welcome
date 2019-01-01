@@ -1,16 +1,11 @@
-window.onload = function () {
-    document.getElementById("back").style.display = 'none';
-};
-
 function outputname() {
-    var name = document.getElementById("inputname").value;
-    document.getElementById("container1").style.display = "none";
-    document.getElementById("demo").innerHTML = "Welcome " + name;
-    document.getElementById("back").style.display = "";
+    const name = document.getElementById("inputname").value;
+    if (name) {
+        document.getElementById("demo").innerHTML = "Welcome " + name;
+        document.querySelector('body').classList.toggle('welcome')
+    } else {}
 }
 
 function takeMeBack() {
-    document.getElementById("container1").style.display = "";
-    document.getElementById("container2").style.display = "none";
-    document.getElementById("back").style.display = "none";
+    document.querySelector('body').classList.toggle('welcome')
 }

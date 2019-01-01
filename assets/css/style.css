@@ -141,3 +141,28 @@ input[type=text]:focus {
 		background-position: 0% 50%
 	}
 }
+
+#container2 {
+    display: none;
+}
+
+#container1 {
+    display: block;
+}
+
+.welcome #container1 {
+    display: none;
+}
+
+.welcome #container2 {
+    display: block !important;
+
+}
+
+#back {
+    display: none;
+}
+
+.welcome #back {
+    display: block;
+}
