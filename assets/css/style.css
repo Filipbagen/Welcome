@@ -38,6 +38,10 @@ h1 {
     font-weight: 300;
 }
 
+ #demo {
+    text-transform:capitalize;
+}
+
 #next, #back {
   text-align: center;
   cursor: pointer;
